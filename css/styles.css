@@ -1,0 +1,88 @@
+/* style sheet for my personal website */
+
+html, body, main {
+  font-family: Courier, sans-serif;
+  height: 100%; /* fill page */
+  margin: 0;
+}
+
+/**
+*
+*  LEFT SIDE
+*
+*
+**/
+/* this panel contains my name, short description of me, social links */
+.left_panel {
+  float: left;
+  width: 40%;
+  height: 100%;
+  background-color: rgb(238, 232, 213);
+  background-image: url("https://cdn131.picsart.com/233812892065202.jpg?r1024x1024");
+  color: white;
+  text-align: center;
+}
+
+/* short list of myself */
+.left_panel ul {
+  list-style-type: none; /* remove bullets*/
+  padding-left: 0; /* remove list item indentation */
+}
+
+/* social media icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: .5s; /* fade into transparency */
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-google {
+  background: #4885ed;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: #0077B5;
+  color: white;
+}
+.fa-youtube {
+  background: #ff0000;
+  color: white;
+}
+.fa-wpforms {
+  background: #00cc66;
+  color: white;
+}
+footer li {
+  display: inline; /* horizontal list */
+}
+
+
+
+
+/**
+*
+*  RIGHT SIDE
+*
+*
+**/
+/* this panel contains my blog posts and about-me section */
+.right_panel {
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+
+
+/* need to add support for small devices so that left and right panel stack */
