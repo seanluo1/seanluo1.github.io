@@ -80,9 +80,20 @@ footer li {
   float: right;
   width: 60%;
   height: 100%;
+  background-color: white;
+}
+.right_panel a {
+  text-decoration: none; /* remove underline from links */
+}
+.blog_post {
+  opacity: .5;
+  padding-left: 1em;
+  padding-right: 1em;
   background-color: rgb(240, 240, 240);
 }
-
+.blog_post:hover {
+  opacity: 1;
+}
 
 
 /* need to add support for small devices so that left and right panel stack */
