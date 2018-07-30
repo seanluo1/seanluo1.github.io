@@ -1,7 +1,7 @@
 /* style sheet for my personal website */
 
 html, body, main {
-  font-family: Courier, sans-serif;
+  font-family: "Courier New", Courier, sans-serif;
   height: 100%; /* fill page */
   margin: 0;
 }
@@ -20,6 +20,7 @@ html, body, main {
   background-image: url("https://cdn131.picsart.com/233812892065202.jpg?r1024x1024");
   color: white;
   text-align: center;
+  position: fixed; /* static left panel */
 }
 
 /* short list of myself */
@@ -27,7 +28,6 @@ html, body, main {
   list-style-type: none; /* remove bullets*/
   padding-left: 0; /* remove list item indentation */
 }
-
 
 /* social media icons */
 footer li {
@@ -91,7 +91,7 @@ footer li {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 /* Style the buttons that are used to open the tab content */
@@ -101,23 +101,23 @@ footer li {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 1.5em;
     transition: 0.3s;
+    font-family: inherit;
 }
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #fff;
+    background-color: #ccc;
 }
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
+    text-decoration: underline;
 }
 /* Style the tab content */
-.tabcontent {
+.tabcontent { /* this is the posts section */
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    padding: 0 1em;
     animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
 }
 /* Go from zero to full opacity */
@@ -127,12 +127,17 @@ footer li {
 }
 .blog_post {
   opacity: .5;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0 1em;
   background-color: rgb(240, 240, 240);
 }
 .blog_post:hover {
   opacity: 1;
+}
+.blog_post img {
+  width: 7em;
+  height: auto;
+  border-radius: 50%; /* circle photos */
+  float: right;
 }
 
 
