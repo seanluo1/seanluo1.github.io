@@ -5,17 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--should scale website to width of device screen-->
   <link rel="stylesheet" href="css/styles.css"> <!-- my style sheet -->
+  <script src= "javascript/javascript.js"></script> <!-- my javascript -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- "font awesome brand" social media icons-->
   <title>Sean Luo</title>
 </head>
 
-<body>
+<body onload="openTab(event, 'About')"> <!-- lazy way of default opening my About tab on page load -->
   <main>
 
     <div class="left_panel">
       <header> <!-- I want the header to be formatted to the right of the page and to be static. -->
-        <h1>Welcome to my website!</h1>
-        <h2>Sean Luo</h2>
+        <h1>Sean Luo</h1>
         <ul>
           <li>The University of Illinois at Urbana-Champaign</li>
           <li>Computer Engineer</li>
@@ -35,7 +35,21 @@
     <div class="right_panel">
 
       <div class="tab">
-        <div class="blog">
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        <button class="tablinks" onclick="openTab(event, 'Blog')">Blog</button>
+        <button class="tablinks" onclick="openTab(event, 'Learning')">Learning</button>
+      </div>
+
+
+      <div id="About" class="tabcontent">
+          <h2>Welcome to my website!</h2>
+          <p>Thanks for visiting. My name is Sean Luo. I am currently a junior studying Computer Engineering at
+             The University of Illinois at Urbana-Champaign. I love playing sports, making videos, and learning new
+             things in my free time. Check out some of the stuff I've been up to!
+          </p>
+      </div>
+
+      <div id="Blog" class="tabcontent">
           <a href="posts/mudan.html">
             <article class="blog_post">
               <h4>July 27, 2018</h4>
@@ -43,19 +57,16 @@
               <h4>Mudan Township, Pingtung, Taiwan</h4>
             </article>
           </a>
-        </div>
       </div>
 
-      <div class="tab">
-        <div class="learning">
+      <div id="Learning" class="tabcontent">
           <a href="insert page link">
             <article class="blog_post"> <!-- change this if I decide to format learning posts differently than blog posts -->
               <h4>July 27, 2018</h4>
-              <h3>Web Dev - HTML & CSS</h3>
+              <h3>Web Development - HTML & CSS</h3>
               <h4>College Park, MD</h4>
             </article>
           </a>
-        </div>
       </div>
 
     </div>
