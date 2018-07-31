@@ -1,0 +1,6 @@
+html, body, main {
+  font-family: Arial, sans-serif;
+  height: 100%; /* fill page */
+  margin: 0;
+  text-align: center;
+}
