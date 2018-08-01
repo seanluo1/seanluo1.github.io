@@ -1,6 +1,6 @@
 /* style sheet for my personal website */
 
-/* need to fix footer scrolling w page on mobile */
+/* need to fix footer scrolling w page on mobile. This only happens on chrome bc the toolbar changes the screen size when it hides */
 html, body, main {
   font-family: "Courier New", Courier, sans-serif;
   height: 100%; /* fill page */
@@ -35,7 +35,7 @@ html, body, main {
 @media only screen and (max-width: 812px) { /* mobile support, 812 is iPhone X landscape size */
   .left_panel {
     padding-top: 10px; /* for some reason this line fixes the black bar gap between html and body? */
-    min-height: 100%; /* this is iffy since it kicks the right panel out of the main and body */ /* trying min-height to fix mobile footer, might not work */
+    height: 100%; /* this is iffy since it kicks the right panel out of the main and body */
 
     /* these next three lines help scale and set my background image */
     background-image: url("https://lh3.googleusercontent.com/7JoK6A3cfa3U6bUq5Z3vIxmh-Ii38oF0aoYyXcQG6P4gnEkPaPE3XPiQYZzXwRFBxhtSQ8eZoiy5yShfZ1z9KGdqvHNnDRZmIA93Pr1G4zrAVFGbmsLoIxpgmsN5FhLcJdYr5E_IjaGH34KJ02NMoT7lFRkcGGHhltB-Tp_LsQriV-FCejQRlUoZxSwW9SgOul9U_4csmRue4GqHGnudrwPTMgDIhyOL7JB_-Wb-hlwQId5XWClwVyXavzwRO0kWOeQQm28GrhdzUbuUC655ykxoY3H55cL7cXU2hcavPZ9939dgVEOgj7_7U3oVzKtNyd3B_ILsn0IyfKMbiZFT6x4WoQUMITGWR0wtKTMhTomIVhxRPSHKKOwfCEtjrUCaIo22ZRkibnuYW_9VCgNpNFkPj5dSFNEFuiC8TKb4dbaEmRKYQeyPHY5-bnOZ2Yv5puDkRs5WBIsoQPIkV9BXEUUADFKWmGYVIxvQU_TMeOEXehWqcikLkEn2SW2yVijtoR_KfqWRCcDGPL7bWnQ5L7LCPFxWWRvgjc0l_myJC4jZNZUDqyvYdfhGXNEfJz-DdmmufAStP0rxqdeXfAytnrE5V1YHCF39zY52H_4=w505-h757-no");
@@ -167,7 +167,7 @@ footer li {
 .tabcontent { /* this is the posts section */
     display: none;
     padding: 0 1em;
-    animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
+    animation: fadeEffect 0.5s;
 }
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
