@@ -145,7 +145,6 @@ footer li {
 /* Style the tab content */
 .tabcontent { /* this is the posts section */
     display: none;
-    margin-top: 5%; /* keep out of the way of nav bar */
     padding: 0 1em;
     animation: fadeEffect 0.5s; /* Fading effect takes 1 second */
 }
