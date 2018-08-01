@@ -1,10 +1,13 @@
 /* style sheet for my personal website */
 
+/* need to fix white-space between html and body on mobile site.
+* need to fix footer scrolling w page on mobile */
 html, body, main {
   font-family: "Courier New", Courier, sans-serif;
   height: 100%; /* fill page */
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
 }
 
 /**
@@ -27,7 +30,7 @@ html, body, main {
 }
 @media only screen and (max-width: 812px) { /* mobile support */
   .left_panel {
-    height: 100%;
+    height: 100%; /* this is iffy since it kicks the right panel out of the main and body */
     background-image: url("https://cdn131.picsart.com/233812892065202.jpg?r1024x1024");
     color: white;
     text-align: center;
@@ -102,6 +105,7 @@ footer li {
 @media only screen and (max-width: 812px) { /* mobile support */
   .right_panel {
     background-color: #EFEFEF;
+    height: 100%;
   }
 }
 .right_panel a {
@@ -115,9 +119,8 @@ footer li {
     overflow: hidden;
     background-color: inherit;
     /*position: fixed; /* stick nav bar to top while scrolling, REMOVED for mobile support */
+    /*z-index: 1; /* keep nav bar on top of posts (tabcontent) */
     height: 5%; /* nav bar size */
-    width: 100%; /* nav bar size */
-    z-index: 1; /* keep nav bar on top of posts (tabcontent) */
     text-align: center;
     padding: 1em;
 }
