@@ -1,13 +1,12 @@
 /* style sheet for my personal website */
 
-/* need to fix white-space between html and body on mobile site.
-* need to fix footer scrolling w page on mobile */
+/* need to fix footer scrolling w page on mobile */
 html, body, main {
   font-family: "Courier New", Courier, sans-serif;
   height: 100%; /* fill page */
   margin: 0px;
   padding: 0px;
-  background-color: black;
+  background-color: #EFEFEF; /* NOTE: this is a lazy fix for the weird black bar at the bottom of the page on mobile. Matches right-panel color. */
 }
 
 /**
@@ -30,6 +29,7 @@ html, body, main {
 }
 @media only screen and (max-width: 812px) { /* mobile support */
   .left_panel {
+    padding-top: 10px; /* for some reason this line fixes the black bar gap between html and body? */
     height: 100%; /* this is iffy since it kicks the right panel out of the main and body */
     background-image: url("https://cdn131.picsart.com/233812892065202.jpg?r1024x1024");
     color: white;
@@ -98,14 +98,14 @@ footer li {
   .right_panel {
     float: right;
     width: 60%;
-    height: 100%;
+    min-height: 100%;
     background-color: #EFEFEF;
   }
 }
 @media only screen and (max-width: 812px) { /* mobile support */
   .right_panel {
-    background-color: #EFEFEF;
-    height: 100%;
+    background-color: #EFEFEF; /* NOTE: change the html, body, main background-color to match this at all times, otherwise a weird bar appears at the bottom */
+    min-height: 100%; /* fills screen on about page even though text does not */
   }
 }
 .right_panel a {
