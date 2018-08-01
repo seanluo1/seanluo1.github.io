@@ -21,21 +21,37 @@ html, body, main {
     float: left;
     width: 40%;
     height: 100%;
-    background-image: url("https://cdn131.picsart.com/233812892065202.jpg?r1024x1024");
+
+    /* these next three lines help scale and set my background image */
+    background-image: url("https://lh3.googleusercontent.com/7JoK6A3cfa3U6bUq5Z3vIxmh-Ii38oF0aoYyXcQG6P4gnEkPaPE3XPiQYZzXwRFBxhtSQ8eZoiy5yShfZ1z9KGdqvHNnDRZmIA93Pr1G4zrAVFGbmsLoIxpgmsN5FhLcJdYr5E_IjaGH34KJ02NMoT7lFRkcGGHhltB-Tp_LsQriV-FCejQRlUoZxSwW9SgOul9U_4csmRue4GqHGnudrwPTMgDIhyOL7JB_-Wb-hlwQId5XWClwVyXavzwRO0kWOeQQm28GrhdzUbuUC655ykxoY3H55cL7cXU2hcavPZ9939dgVEOgj7_7U3oVzKtNyd3B_ILsn0IyfKMbiZFT6x4WoQUMITGWR0wtKTMhTomIVhxRPSHKKOwfCEtjrUCaIo22ZRkibnuYW_9VCgNpNFkPj5dSFNEFuiC8TKb4dbaEmRKYQeyPHY5-bnOZ2Yv5puDkRs5WBIsoQPIkV9BXEUUADFKWmGYVIxvQU_TMeOEXehWqcikLkEn2SW2yVijtoR_KfqWRCcDGPL7bWnQ5L7LCPFxWWRvgjc0l_myJC4jZNZUDqyvYdfhGXNEfJz-DdmmufAStP0rxqdeXfAytnrE5V1YHCF39zY52H_4=w505-h757-no");
+    background-size: cover;
+    resize: both;
+
     color: white;
     text-align: center;
     position: fixed; /* static left panel */
   }
 }
-@media only screen and (max-width: 812px) { /* mobile support */
+@media only screen and (max-width: 812px) { /* mobile support, 812 is iPhone X landscape size */
   .left_panel {
     padding-top: 10px; /* for some reason this line fixes the black bar gap between html and body? */
-    height: 100%; /* this is iffy since it kicks the right panel out of the main and body */
-    background-image: url("https://cdn131.picsart.com/233812892065202.jpg?r1024x1024");
+    min-height: 100%; /* this is iffy since it kicks the right panel out of the main and body */ /* trying min-height to fix mobile footer, might not work */
+
+    /* these next three lines help scale and set my background image */
+    background-image: url("https://lh3.googleusercontent.com/7JoK6A3cfa3U6bUq5Z3vIxmh-Ii38oF0aoYyXcQG6P4gnEkPaPE3XPiQYZzXwRFBxhtSQ8eZoiy5yShfZ1z9KGdqvHNnDRZmIA93Pr1G4zrAVFGbmsLoIxpgmsN5FhLcJdYr5E_IjaGH34KJ02NMoT7lFRkcGGHhltB-Tp_LsQriV-FCejQRlUoZxSwW9SgOul9U_4csmRue4GqHGnudrwPTMgDIhyOL7JB_-Wb-hlwQId5XWClwVyXavzwRO0kWOeQQm28GrhdzUbuUC655ykxoY3H55cL7cXU2hcavPZ9939dgVEOgj7_7U3oVzKtNyd3B_ILsn0IyfKMbiZFT6x4WoQUMITGWR0wtKTMhTomIVhxRPSHKKOwfCEtjrUCaIo22ZRkibnuYW_9VCgNpNFkPj5dSFNEFuiC8TKb4dbaEmRKYQeyPHY5-bnOZ2Yv5puDkRs5WBIsoQPIkV9BXEUUADFKWmGYVIxvQU_TMeOEXehWqcikLkEn2SW2yVijtoR_KfqWRCcDGPL7bWnQ5L7LCPFxWWRvgjc0l_myJC4jZNZUDqyvYdfhGXNEfJz-DdmmufAStP0rxqdeXfAytnrE5V1YHCF39zY52H_4=w505-h757-no");
+    background-size: cover;
+    resize: both;
+
     color: white;
     text-align: center;
   }
 }
+
+/* colors background for text bc the photo is too bright */
+.left_panel header {
+  background-color: black;
+}
+
 /* short list of myself, also affects footer */
 .left_panel ul {
   list-style-type: none; /* remove bullets*/
@@ -113,6 +129,7 @@ footer li {
 }
 .right_panel a {
   text-decoration: none; /* remove underline from links */
+  color: black; /* change default blue links to black */
 }
 #About {
   text-align: center;
