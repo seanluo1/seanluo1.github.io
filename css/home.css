@@ -106,6 +106,7 @@ footer li {
   .right_panel {
     background-color: #EFEFEF; /* NOTE: change the html, body, main background-color to match this at all times, otherwise a weird bar appears at the bottom */
     min-height: 100%; /* fills screen on about page even though text does not */
+    padding-bottom: 10px;
   }
 }
 .right_panel a {
