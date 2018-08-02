@@ -134,6 +134,10 @@ footer li {
 #About {
   text-align: center;
 }
+#About img {
+  width: 100%;
+  height: auto;
+}
 /* Style the tab */
 .tab { /* this is the nav bar */
     overflow: hidden;
