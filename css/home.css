@@ -137,6 +137,7 @@ footer li {
 #About img {
   width: 100%;
   height: auto;
+  display: block; /* removes white space between images */
 }
 /* Style the tab */
 .tab { /* this is the nav bar */
@@ -170,7 +171,7 @@ footer li {
 /* Style the tab content */
 .tabcontent { /* this is the posts section */
     display: none;
-    padding: 0 1em;
+    padding: none;
     animation: fadeEffect 0.5s;
 }
 /* Go from zero to full opacity */
