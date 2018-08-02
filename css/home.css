@@ -181,16 +181,16 @@ footer li {
 }
 .blog_post {
   opacity: .6;
-  padding: 0 1em;
+  padding: 1em 1em;
   background-color: #D3D3D3;
+  display: block;
 }
 .blog_post:hover {
   opacity: 1;
   background-color: #C0C0C0;
 }
 .blog_post img {
-  width: 7em;
-  height: auto;
-  border-radius: 50%; /* circle photos */
   float: right;
+  border-radius: 50%; /* circle photos */
+  width: 10em;
 }
