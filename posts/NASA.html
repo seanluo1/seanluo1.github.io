@@ -1,42 +1,26 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--should scale website to width of device screen-->
-  <link rel="stylesheet" href="../css/blog_post.css"> <!-- my style sheet -->
-    <link rel="shortcut icon" href="../pics/favicon.ico">
-  <title>NASA Internship Retrospective</title>
-</head>
-<body>
-  <main>
-    <h1>NASA Internship Retrospective</h1>
-    <h2>August 12, 2018</h2>
-    <h2>Chicago, Illinois</h2>
-    <p>
-      I was extremely fortunate enough to work for NASA at The Johns Hopkins University Applied Physics Laboratory for the past 10 weeks.
-      Situated in Laurel, Maryland, JHU APL was my first software engineering internship, so I was eager to see what it was like to be
-      working on software outside of a classroom setting.
-    </p>
-    <p>
-      I worked on a team with 4 other software developers, a Scrum master, and product owner. We developed software according to the Agile
-      (Scrum) guidelines. This was probably the best thing I learned from my experience this summer. Disecting a project into product backlog
-      items, then further decomposing those items into subtasks was something that I've never done in the past, but I found to be an extremely
-      useful skill. Frequent stand-up, PBI grooming, and Sprint planning/review meetings made sure that everyone was constantly working toward
-      the same overarching goal, yet didn't step on each others toes while working on smaller tasks.
-    </p>
-    <p>
-      I had the role of a full-time software engineer. I handled my own subtasks, and had as much work to do as the rest of my coworkers, which
-      was awesome. I worked on test software that created mission-independent test cases for NASA AMPCS, the ground system that communicates with
-      almost all of NASA JPL's space vehicles. I wrote CLTU parsers in Python to read the data that was transmitted to the space craft, as well as
-      a program to write these data packets in Java.
-    </p>
-    <p>
-      I gained experience in Git, Atlassian products (Bitbucket, Confluence, and Jira), and Agile methodologies.
-    </p>
-    <p>
-      <b>This page is unfinished</b>
-    </p>
-  </main>
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>NASA Internship</title>
+  </head>
+  <body>
+    <p>As a kid, there were two things that I always wanted to be: a baseball player and an astronaut (not necessarily exclusively). If I told my 7-year-old self what I did this past summer for my first internship, I think he’d be pretty excited, even though I wasn’t playing in the MLB (yet). This past summer, I had my first software developer internship where I worked for NASA through The Johns Hopkins University Applied Physics Laboratory (APL).</p>
+    <p>During my 10-week program, I worked full-time in a software development team on a project titled MITE (Mission Independent Test Environment). The idea behind MITE was to create software that could emulate space craft and thus test different aspects of NASA’s ground system every time it was updated. This ground system, titled AMPCS (AMMOS Mission Data Processing and Control System), is responsible for sending and receiving messages to various space craft such as the Europa Clipper and the Opportunity Mars Rover. As it stands, testing updates for AMPCS is very expensive because the only way it can be done is to send and to receive messages from space which is very slow, and the time consumed is time wasted because valuable data could have been transmitted instead.</p>
+    <p>During my time at APL, I created CLTU (Command Link Transmission Unit) verifiers using both Python and Java. CLTU’s are a form of data packets that are encoded in a specific format of hexadecimal values. In a nutshell, CLTU’s contain multiple start-message and end-message hex codes with data sandwiched in between. After researching the specific encoding format, I was able to create programs that could parse through these data packets, interpret the information inside of them, and decide if the messages were sent properly.</p>
+    <p>I was put onto the MITE team right as the project was starting up. As a result, in addition to my CLTU parser, I spent a lot of time researching AMPCS, which was a system new to my coworkers as well. I documented dozens of pages on how to use the system on our team’s wiki which was hosted on Confluence. I also became very familiar with other Atlassian products: Jira and Bitbucket.</p>
+    <p>I learned a lot about professional software development during my 10 weeks with APL. The most prominent of which was Agile, specifically SCRUM. In my team of 7 people, I learned about the dynamic between software engineers, a SCRUM master, and a product owner. I learned how to dissect a project into a prioritized list of product backlog items (PBI) and then further dissect those into subtasks. I got used to frequent stand-up, PBI grooming, and sprint planning/review meetings. I was given full responsibility as a software engineer, and I loved it.</p>
+    <p>My first summer internship couldn’t have been a better experience. I got to work on some amazing software, meet countless friends, coworkers, and mentors, and learn invaluable skills that I’ll use throughout the rest of my career. I’m extremely thankful to The Johns Hopkins University Applied Physics Laboratory for this past summer. Now I just hope that my application for that MLB shortstop position goes through for next year.</p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
 </html>

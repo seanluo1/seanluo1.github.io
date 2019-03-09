@@ -1,96 +1,121 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--should scale website to width of device screen-->
-  <link rel="stylesheet" href="css/home.css"> <!-- my style sheet -->
-  <script src= "javascript/javascript.js"></script> <!-- my javascript -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- "font awesome brand" social media icons-->
-  <link rel="shortcut icon" href="pics/favicon.ico">
-  <title>Sean Luo</title>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- Font Awesome Icon Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- "font awesome brand" social media icons-->
+    
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="css/home.css">
 
-<body onload="openTab(event, 'About')"> <!-- lazy way of default opening my About tab on page load -->
-  <main>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="pics/favicon.ico">
 
-    <div class="left_panel">
-      <header> <!-- I want the header to be formatted to the right of the page and to be static. -->
-        <h1>Sean Luo</h1>
-        <ul>
-          <li>The University of Illinois at Urbana-Champaign</li>
-          <li>Computer Engineer</li>
+    <title>Sean Luo's Personal Website</title>
+  </head>
+  <body>
+
+    <!-- Top Image (Gothic Font) -->
+    <img class="img-fluid" src="pics/barcelona_portrait.jpg">
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#posts">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#contact">Contact</a>
+          </li>
         </ul>
-      </header>
-      <footer>
+      </div>
+    </nav>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- about tab -->
+      <div class="tab-pane container active" id="about">
+        <p>Thanks for visiting my website! My name is Sean Luo, and I am currently a junior studying Computer Engineering at The University of Illinois at Urbana-Champaign. I love programming, playing sports, and making videos in my free time. Check out some of the stuff I've been up to!</p>
+      </div>
+      <!-- posts tab -->
+      <div class="tab-pane container fade" id="posts">
+        <div class="card-deck">
+          <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+              <a href="posts/template.html" class="card h-100">
+                  <img class="card-img-top img-fluid" src="http://placehold.it/500x280" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Study Abroad in Stockholm, Sweden</h4>
+                      <p class="card-text">My experiences studying abroad in Europe during the spring semester of my junior year.</p>
+                      <p class="card-text"><small class="text-muted">Current</small></p>
+                  </div>
+              </a>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+              <a href="posts/template.html" class="card h-100">
+                  <img class="card-img-top img-fluid" src="pics/old_website/old_website_1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Bootstrap-ing My Website</h4>
+                      <p class="card-text">I used Twitter Bootstrap to revamp my website. Read about how, and why, I did it.</p>
+                      <p class="card-text"><small class="text-muted">March 9, 2019</small></p>
+                  </div>
+              </a>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+              <a href="posts/NASA.html" class="card h-100">
+                  <img class="card-img-top img-fluid" src="pics/nasa/nasa_group.JPG" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">NASA Internship Retrospective</h4>
+                      <p class="card-text">My experience working for NASA through The Johns Hopkins University Applied Physics Lab.</p>
+                      <p class="card-text"><small class="text-muted">August 11, 2018</small></p>
+                  </div>
+              </a>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+              <a href="posts/Mudan.html" class="card h-100">
+                  <img class="card-img-top img-fluid" src="pics/mudan/mudan_students.JPG" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Teaching English in Taiwan</h4>
+                      <p class="card-text">Reflecting on summer 2017 when I taught English to junior high school students in Taiwan.</p>
+                      <p class="card-text"><small class="text-muted">July 27, 2018</small></p>
+                  </div>
+              </a>
+          </div>
+        </div>
+      </div>
+      <!-- contact tab -->
+      <div class="tab-pane container fade" id="contact">
+        <p>Feel free to contact me through any of the links below. I look forward to hearing from you!</p>
         <ul>
           <li><a href = "mailto:seanluo1@gmail.com" class="fa fa-envelope-o"></a></li>
           <li><a href = "https://github.com/seanluo1" class="fa fa-github" target="_blank"></a></li>
-          <li><a href = "https://www.linkedin.com/in/sean-luo-024979149/" class="fa fa-linkedin" target="_blank"></a></li>
+          <li><a href = "https://www.linkedin.com/in/seanluo1" class="fa fa-linkedin" target="_blank"></a></li>
           <li><a href = "https://www.youtube.com/playlist?list=PLLfrBLuevztUdNJIPJVTyciSwnWGOy15k" class="fa fa-youtube" target="_blank"></a></li>
-          <li><a href = "Resume.pdf" class="fa fa-file-text-o" target="_blank"></a></li>
         </ul>
-      </footer>
+      </div>
     </div>
 
-    <div class="right_panel">
-
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'About')">ABOUT</button>
-        <button class="tablinks" onclick="openTab(event, 'Posts')">POSTS</button>
-      </div>
 
 
-      <div id="About" class="tabcontent">
-        <h2>Welcome to my website!</h2>
-        <p>
-          Thanks for visiting. My name is Sean Luo. I am currently a junior studying Computer Engineering at
-          The University of Illinois at Urbana-Champaign. I love playing sports, making videos, and learning new
-          things in my free time. There are links to my email, github, LinkedIn, Youtube, and resume on the left (on desktop) or on the top (on mobile).
-          Check out some of the stuff I've been up to!
-        </p>
-        <img src="pics/parents.JPG" alt="Family photo">
-        <img src="pics/snorkeling.JPG" alt="Snorkeling photo">
-        <img src="pics/mudan_students.JPG" alt="Mudan students">
-      </div>
 
-      <div id="Posts" class="tabcontent">
-        <a href="posts/NASA.html">
-          <article class="blog_post">
-            <h4>August 11, 2018</h4>
-            <h3>NASA Internship Retrospective</h3>
-            <h4>Laurel, MD</h4>
-          </article>
-        </a>
-
-        <a href="posts/mudan.html">
-          <article class="blog_post">
-            <h4>July 27, 2018</h4>
-            <h3>Mudan Township Junior High School One-Year Anniversary</h3>
-            <h4>Mudan Township, Pingtung, Taiwan</h4>
-          </article>
-        </a>
-
-        <a href="posts/webdev.html">
-          <article class="blog_post">
-            <h4>July 27, 2018</h4>
-            <h3>Learning Web Development</h3>
-            <h4>College Park, MD</h4>
-          </article>
-        </a>
-<!--
-        <a href="posts/ece385.html">
-          <article class="blog_post">
-            <h4>May 4, 2018</h4>
-            <h3>ECE 385 Final Project</h3>
-            <h4>Champaign, IL</h4>
-          </article>
-        </a>
--->
-      </div>
-
-    </div>
-
-  </main>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
 </html>
