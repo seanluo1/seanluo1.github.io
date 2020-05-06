@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Senior Design</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>During the fall semester of my senior year, I took the senior design course for ECE as my capstone class. In this class, we were given full freedom on what project we would work on throughout the semester, as long as we incorporated both hardware and software into the final design. I decided to pitch an idea for a computer-vision workout coach, and pretty soon I had a group with 2 other classmates to work on this idea with.</p>
+      <p>We started the project by choosing a workout to analyze. We selected the deadlift because it is a workout that causes a lot of injury in the gym due to poor form. We wanted to create a solution to this problem.</p>
+      <p>After some initial sketches and throwing around ideas, my partners and I settled upon a design. We would create a barbell attachment that would connect to a computer via Bluetooth and relay information about in-progress lifts. This information would tell the computer what phase of the deadlift motion the user was currently in so that the computer could classify the images that it captured. The computer would then compare the user’s deadlift form to a professional’s via joint-angle analysis, meaning that it would read the angles of every major joint involved in the deadlift motion, and make sure that it fell within a certain range of the professional’s equivalent joint angles.</p>
+      <img class="img-responsive" width=50% src="../pics/senior_design/sketch.PNG" alt="sketch">
+      <p>Throughout the project, I learned a lot of new skills. I learned how to design PCBs on Eagle, how to solder hardware, and how to have software and hardware communicate with one another. I also got experience with open source computer vision software because I used OpenCV and OpenPose to track the user’s movement.</p>
+      <p>Below are some photos of the final product. I’m very proud of my team for completing this project and creating a solution to a real-life problem. This project was a perfect representation of my undergraduate experience in ECE, having me combine hardware and software into a single project.</p>
+      <p>This project was intrinsically very software heavy with computer-vision, but we were required to implement hardware into it. If I were to move forward with this project, I would try to streamline it by removing the barbell attachment entirely and having the computer vision do all the deadlift analysis. Additionally, I would try to expand our software into other exercises or even sports.</p>
+      <p>That being said, I’m very happy with how my project turned out. It was difficult building this project entirely from scratch, and I’m very proud of my team for accomplishing it.</p>
+      <img class="img-responsive" width=50% src="../pics/senior_design/analysis.jpg" alt="final pic 1">
+      <img class="img-responsive" width=50% src="../pics/senior_design/hardware.jpg" alt="final pic 2">
+      <img class="img-responsive" width=50% src="../pics/senior_design/team.jpg" alt="final pic 3">
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
