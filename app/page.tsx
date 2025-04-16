@@ -1,21 +1,29 @@
-import { BlogPosts } from 'app/components/posts'
+import Image from "next/image";
+import { BlogPosts } from "app/components/posts";
 
 export default function Page() {
   return (
     <section>
+      <Image
+        src="/me.png" // Make sure this image exists in your /public folder
+        alt="Profile picture"
+        width={250}
+        height={250}
+        className="rounded-2xl mb-8"
+      />
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Hi, I'm Sean.
       </h1>
+      <h2 className="text-gray-300 mb-4">
+        Currently located in <s>Chicago</s> New York.
+      </h2>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`Welcome to my page. I'm a software engineer, and sometimes
+        I build cool things. Check some of them out. `}
       </p>
       <div className="my-8">
         <BlogPosts />
       </div>
     </section>
-  )
+  );
 }
