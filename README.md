@@ -1,4 +1,15 @@
-# Portfolio Blog Starter
+# seanluo1.github.io
+
+Next.js portfolio website. Source code is in `main` branch, static website hosted in `gh-pages` branch.
+
+## Deployment steps
+
+```
+npm run build
+npm run gh-deploy
+```
+
+## Portfolio Blog Starter
 
 This is a porfolio site template complete with a blog. Includes:
 

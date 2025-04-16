@@ -1,8 +1,7 @@
 import { ImageResponse } from "next/og";
 
-export function GET(request: Request) {
-  let url = new URL(request.url);
-  let title = url.searchParams.get("title") || "seanluo1.github.io";
+export function GET() {
+  let title = "seanluo1.github.io";
 
   return new ImageResponse(
     (
