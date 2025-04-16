@@ -1,13 +1,6 @@
 # seanluo1.github.io
 
-Next.js portfolio website. Source code is in `main` branch, static website hosted in `gh-pages` branch.
-
-## Deployment steps
-
-```
-npm run build
-npm run gh-deploy
-```
+Next.js portfolio website. Static website built and deployed with every commit to `main` branch via GitHub Actions (see `.github/workflows/nextjs.yml`).
 
 ## Portfolio Blog Starter
 
