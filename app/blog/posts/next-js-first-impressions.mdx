@@ -1,0 +1,50 @@
+---
+title: "Next.js First Impressions From a Backend Engineer"
+publishedAt: "2025-05-16"
+summary: "First impressions trying out Next.js from an engineer with limited frontend experience."
+---
+
+Yesterday I updated my personal website for the first time since I was in college (5 years ago).
+
+I now have 5 years of experience under my belt working as a professional software engineer.
+In that time, I've been a cloud infrastructure engineer as well as a backend engineer (some might call it fullstack, but it's like 90% backend work if we're being honest).
+
+For the most part, the only frontend development I've ever done was adding or disabling buttons, or copy/pasting some components for features that I developed in the backend.
+Outside of that, I've tried (and failed) many times to build React apps as personal projects,
+but they've always fallen flat as I inevitably get exhausted digging into endless StackOverflow rabbit holes discussing best practices, or trying to implement the most basic CSS styles that look nothing like I wanted them to.
+
+But when a friend reached out with an offer to help him build his company's website, I felt like I finally had real motivation to learn the frontend skills that I've been putting off for half a decade.
+
+After digging around the internet and talking to some friends with more experience, I finally settled for trying out Next.js.
+
+## What Held Me Back To Start
+
+During my initial research on how I could build a website to manage my friend's company's needs (customer auth, custom backend data logic & CRUD, etc) I was initially put off by Next.js because of its association with Vercel.
+
+I was a cloud infrastructure engineer in my first job out of college, so the idea of using anything except direct AWS services immediately made me hesitate. Why would I want a _managed_ solution, when I can build everything myself and **only pay for what I use?**
+
+However, after thinking about it more, I realized how silly that was. I'd have to figure out how to use Cognito for customer auth, API Gateway + Lambda for backend, S3 + CloudFront or ECS to host website content, RDS or DynamoDB for data, IAM roles, and more.
+I'd need to write Terraform code to represent all of this infrastructure, and I'd want that code to be modularized to be scalable for any new features for the website in the future. At the end of the day, how much am I really saving by being stubborn about using AWS?
+At the scale of what this website is expected to serve, the answer is likely pennies or maybe a few dollars a month.
+
+On top of learning how to develop and host frontend applications for the first time, that's too much to ask. So maybe Next.js being somewhat opinionated will help me get started fast, and maybe using Vercel won't actually be that bad.
+
+## First Attempt at Next.js
+
+As a test run, I decided to take a crack at updating my personal website using Next.js. When I initially wrote this website in college, I did it purely in HTML, CSS, and Javascript.
+React felt like overkill at the time, and every time I tried to use React since, I felt frozen by indecision. What's webpack? Mobile-first design? What's the best way to manage CSS? What's a static site?
+Even with `create-react-app`, I felt like adding or removing components looked unbelievably bad, and that I was doing something wrong.
+
+So this time around, I found a template on Vercel's website and cloned it. I ran `npm run dev`, and everything worked right away (and looked great thanks to Tailwind). Then I read some of their (well written) docs,
+started refactoring a little bit here and there, and everything... sort of made sense. The project file structure made intuitive sense, and the code had less weird React boilerplate which made it feel more like writing React in a sandbox (which is a good thing for me).
+
+GitHub pages, which is where this site is hosted, only allows static sites, so I found the Next.js documentation on how to build a static website, tinkered with the `next.config.js` paths a little bit, changed some components to be static-compatible, pushed it to GitHub,
+and I was done. My site was live, and visually it looked great. And it's optimized with SEO in mind out of the box.
+
+Actually, the magic of pushing a commit to GitHub and having it immediately kick off a build and deploy (via GitHub Actions) made me realize I should give Vercel a shot. In my day job, I'm used to lengthy, flaky, and tedious deployment pipelines. This felt like a night and day difference.
+
+## Conclusion
+
+The initial developer experience with Next.js is unbelievably good. Things just work, and the somewhat opinionated structure of it simplifies things for someone like me who lacks extensive frontend experience.
+
+I'm alredy imagining how I can implement a lot of features for all sorts of projects with it. And I'm excited to code in my free time for the first time in ages.
