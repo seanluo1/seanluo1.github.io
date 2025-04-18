@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export function GET() {
-  let title = "seanluo1.github.io";
+  const title = "seanluo1.github.io";
 
   return new ImageResponse(
     (

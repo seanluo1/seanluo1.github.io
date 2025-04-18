@@ -12,7 +12,7 @@ export default function Page() {
         className="rounded-2xl mb-8"
       />
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Hi, I'm Sean.
+        Hi, I&apos;m Sean.
       </h1>
       <h2 className="text-gray-300 mb-4">
         Currently located in <s>Chicago</s> New York.
