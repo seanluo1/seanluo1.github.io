@@ -35,10 +35,10 @@ As a test run, I decided to take a crack at updating my personal website using N
 React felt like overkill at the time, and every time I tried to use React since, I felt frozen by indecision. What's webpack? Mobile-first design? What's the best way to manage CSS? What's a static site?
 Even with `create-react-app`, I felt like adding or removing components looked unbelievably bad, and that I was doing something wrong.
 
-So this time around, I found a template on Vercel's website and cloned it. I ran `npm run dev`, and everything worked right away (and looked great thanks to Tailwind). Then I read some of their (well written) docs,
+So this time around, I found a [template](https://vercel.com/templates/next.js/portfolio-starter-kit) on Vercel's website and cloned it. I ran `npm run dev`, and everything worked right away (and looked great thanks to Tailwind). Then I read some of their (well written) docs,
 started refactoring a little bit here and there, and everything... sort of made sense. The project file structure made intuitive sense, and the code had less weird React boilerplate which made it feel more like writing React in a sandbox (which is a good thing for me).
 
-GitHub pages, which is where this site is hosted, only allows static sites, so I found the Next.js documentation on how to build a static website, tinkered with the `next.config.js` paths a little bit, changed some components to be static-compatible, pushed it to GitHub,
+GitHub pages, which is where this site is hosted, only allows static sites, so I found the [Next.js documentation on how to build a static website](https://nextjs.org/docs/app/building-your-application/deploying/static-exports), tinkered with the `next.config.js` paths a little bit, changed some components to be static-compatible, pushed it to GitHub,
 and I was done. My site was live, and visually it looked great. And it's optimized with SEO in mind out of the box.
 
 Actually, the magic of pushing a commit to GitHub and having it immediately kick off a build and deploy (via GitHub Actions) made me realize I should give Vercel a shot. In my day job, I'm used to lengthy, flaky, and tedious deployment pipelines. This felt like a night and day difference.

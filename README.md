@@ -20,6 +20,4 @@ Start local server: `npm run dev`
 ## TODO
 
 - Replace placeholder posts (write one on baseball lambda)
-- Standardize hover/static colors across navbar, footer, posts. Navbar should be inverse of others
 - page names, favicon
-- Add hyperlinks for Node post docs referenced
