@@ -1,6 +1,6 @@
 # seanluo1.github.io
 
-Next.js portfolio website. Static website built and deployed with every commit to `main` branch via GitHub Actions (see `.github/workflows/nextjs.yml`).
+Next.js [blog website](https://seanluo1.github.io/). Static website built and deployed with every commit to `main` branch via GitHub Actions (see `.github/workflows/nextjs.yml`).
 
 ## How to Run
 
@@ -19,4 +19,4 @@ Start local server: `npm run dev`
 
 ## TODO
 
-- Replace placeholder posts (write one on baseball lambda)
+- Write post on baseball stat lambda
