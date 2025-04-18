@@ -20,4 +20,3 @@ Start local server: `npm run dev`
 ## TODO
 
 - Replace placeholder posts (write one on baseball lambda)
-- page names, favicon
