@@ -22,8 +22,8 @@ interface FooterItemProps {
 
 const footerItems: FooterItemProps[] = [
   // { name: "rss", link: "/rss" },
-  { name: "github", link: "https://github.com/seanluo1" },
-  { name: "source", link: "https://github.com/seanluo1/seanluo1.github.io" },
+  { name: 'github', link: 'https://github.com/seanluo1' },
+  { name: 'source', link: 'https://github.com/seanluo1/seanluo1.github.io' },
 ];
 
 function FooterItem(props: FooterItemProps) {

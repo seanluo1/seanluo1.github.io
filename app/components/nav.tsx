@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const navItems = {
-  "/": {
-    name: "home",
+  '/': {
+    name: 'home',
   },
-  "/blog": {
-    name: "blog",
+  '/blog': {
+    name: 'blog',
   },
-  "https://www.linkedin.com/in/seanluo1/": {
-    name: "contact",
+  'https://www.linkedin.com/in/seanluo1/': {
+    name: 'contact',
   },
 };
 

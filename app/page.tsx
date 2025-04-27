@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { BlogPosts } from "app/components/posts";
+import Image from 'next/image';
+import { BlogPosts } from 'app/components/posts';
 
 export default function Page() {
   return (
