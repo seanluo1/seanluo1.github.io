@@ -1,9 +1,4 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "next/typescript"
-  ],
-  "rules": {
-    "quotes": ["error", "single"]
-  }
+  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+  "rules": {}
 }

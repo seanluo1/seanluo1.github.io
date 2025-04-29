@@ -12,7 +12,7 @@ import { baseUrl } from './sitemap';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Sean\'s Engineering Blog',
+    default: "Sean's Engineering Blog",
     template: '%s | Next.js Portfolio Starter',
   },
   icons: {
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
       },
     ],
   },
-  description: 'Hi, I\'m Sean. Here\'s some stuff I built.',
+  description: "Hi, I'm Sean. Here's some stuff I built.",
   openGraph: {
-    title: 'Sean\'s Engineering Blog',
-    description: 'Hi, I\'m Sean. Here\'s some stuff I built.',
+    title: "Sean's Engineering Blog",
+    description: "Hi, I'm Sean. Here's some stuff I built.",
     url: baseUrl,
-    siteName: 'Sean\'s Engineering Blog',
+    siteName: "Sean's Engineering Blog",
     locale: 'en_US',
     type: 'website',
   },
@@ -47,11 +47,7 @@ export const metadata: Metadata = {
 
 const cx = (...classes) => classes.filter(Boolean).join(' ');
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
