@@ -1,0 +1,74 @@
+---
+title: 'Projecting MLB Games'
+publishedAt: '2025-07-20'
+summary: 'Experience working on a side project to predict MLB game outcomes.'
+---
+
+A few years ago, a good friend and I built a side project to predict the outcomes of MLB games. Why MLB? Well, compared to other sports, baseball is played in a controlled atmosphere.
+Each at-bat starts the same way, it's effectively 1-on-1 between a batter and a pitcher, and there's a surplus of advanced stats that represent team defense, pitcher efficiency, etc that enable
+America's pastime to be simulated through numbers better than most other sports. Basically, the variables are controlled and predictable.
+
+Plus, the two of us are nerds at heart who just love sports and numbers.
+
+## What We Did
+
+We created a backend which scrapes daily matchups and up-to-date stats for the starting pitchers and the teams playing.
+These numbers are crunched (with a secret formula), and the expected results of the games are saved.
+
+## Tech Deep Dive
+
+This project is written in Python and hosted on an AWS Lambda function which is triggered every day during the MLB season with a CloudWatch cron Event. The results are saved in both S3 and DynamoDB,
+and the results are made available through a private REST API hosted on API Gateway. The infrastucture is managed entirely with Terraform.
+
+Since (this) blog site is hosted on GitHub Pages, and I don't want to push the API key to public source code, here's an example of the output results:
+
+```
+        {
+            "away_win_perc": {
+                "S": "55.39%"
+            },
+            "date": {
+                "S": "2025-07-20"
+            },
+            "home_win_perc": {
+                "S": "44.61%"
+            },
+            "home_team": {
+                "S": "CHC"
+            },
+            "away_team": {
+                "S": "BOS"
+            },
+            "ttl": {
+                "N": "1816084868"
+            },
+            "total_runs": {
+                "S": "8.14"
+            }
+        },
+```
+
+## Improvements Moving Forward
+
+As it always goes with software, there's plenty of improvements to be made that require refactors. We first started this project when we were out of college 5 years ago.
+Since then, I'd like to think I've become a significantly better engineer, and I can spot a lot of improvements I'd make if I did it all over again. Off the top of my head, here's a few examples:
+
+- Better error handling
+- Code cleanliness
+  - More separation of concerns between controllers, business logic, DAOs
+  - Constants and interfaces for different scrapers
+  - Dependency injection and testing
+  - Type safety (as far as Python supports it)
+  - Pandas for data handling instead of nested Python dictionaries
+  - (lots more, but you get the point)
+- Integrate official MLB API (which was released after we initially built this)
+- Fullstack integration, rather than decoupled backend on AWS & frontend hosted on Webflow
+
+## Conclusion
+
+I'm proud of what we built, especially given the experience we had when we started. I still tinker with small improvements here and there, but in general it's nice to look back at this project
+and see how much I've grown as an engineer.
+
+Projects like this remind me of why I got into software engineering in the first place. Combining my love of sports and math is so fun, and I love that I have the ability to build something unique.
+
+If you're interested in this project, check out [Outlier Projections](https://www.outlierprojections.com/). My friend manages the website and social media while I tinker in the engineering backend.
